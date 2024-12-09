@@ -1,0 +1,15 @@
+/** Para instalar paquetes **/ 
+npm install (paquete a usar)
+ej: npm install express
+
+/** Para eliminar paquetes**/ 
+npm uninstall (paquete a desinstalar)
+ej: npm uninstall express
+
+/** Para instalar una version en especifico de un paquete**/ 
+npm install (paquete a instalar) + @ + (version a instalar)
+ej: npm install express@4.15.1
+
+/** Dependencia solo para el desarrollo**/ 
+npm install (paquete a instalar) --save-dev
+ej: npm install express --save-dev

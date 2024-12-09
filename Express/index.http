@@ -1,0 +1,79 @@
+POST http://localhost:3000/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : 4, 
+    "titulo": "Aprende Node.js",
+    "lenguaje": "javascript",
+    "vistas": 54545,
+    "nivel": "basico"
+}
+
+###
+
+PUT http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "titulo": "Python intermedio",
+    "lenguaje": "python", 
+    "vistar": 123094,
+    "nivel": "intermedio"
+}
+
+### 
+
+PATCH  http://localhost:3000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Python intermedio en proyectos", 
+    "vistas": 546451
+}
+
+### 
+
+
+DELETE http://localhost:3000/api/cursos/programacion/1 HTTP/1.1
+
+### 
+
+POST http://localhost:3000/api/cursos/matematicas HTTP/1.2
+Content-Type: application/json
+
+{
+    "id": 3,
+    "titulo": "Curso geometria",
+    "lenguaje": "geometria", 
+    "vistas": 123094,
+    "nivel": "basico"
+}
+
+###
+
+PUT http://localhost:3000/api/cursos/matematicas/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "titulo": "Curso Algebra",
+    "lenguaje": "algebra", 
+    "vistas": 123094,
+    "nivel": "intermedio"
+}
+
+###
+
+PATCH  http://localhost:3000/api/cursos/matematicas/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Curso Algebra Avanzado",
+    "vistas": 54654654
+}
+
+###
+
+DELETE  http://localhost:3000/api/cursos/matematicas/3 HTTP/1.1
+ 
